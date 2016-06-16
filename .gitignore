@@ -1,0 +1,4 @@
+build
+dist
+django_stream.egg-info
+*.pyc

@@ -30,9 +30,9 @@ def __register(_field_name, _related_name, _registry, _model_map):
                 wrapper(m, field_name, related_name)
         else:
             if field_name is None:
-                field_name = _field_name % model._meta.module_name
+                field_name = _field_name % model._meta.model_name
             if related_name is None:
-                related_name = _related_name % model._meta.module_name
+                related_name = _related_name % model._meta.model_name
                 
             _register(model, field_name, related_name, _registry, _model_map)
 
